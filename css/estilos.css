@@ -305,6 +305,68 @@ background-image: url(../img/fondoLogin.jpg);
     font-family: 'Ysabeau', sans-serif;
 
 }
+
+/*LOGIN RESPONSIVE*/
+
+@media screen and (max-width:500px) {
+    
+    #fondoLogin {
+        background-image: url(../img/fondoLogin.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .bloqueLogin {
+        background: rgba(223, 186, 186, 0.1);
+        backdrop-filter: blur(5px);
+        display: flex;
+        margin: 20px;
+        margin-top: 50px;
+        margin-left: 28px;
+        border: 1px solid white;
+        border-radius: 15px;
+        border-style: solid;
+        width: 100%;           /* Ancho de 150 píxeles */
+        height: 88vh;          /* Alto de 150 píxeles */
+        border: 5px solid rgba(255, 255, 255, 0.2); /* Borde color negro y de 1 píxel de grosor */
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #password{
+        margin-bottom: 160px;
+        margin-left: 10px;
+    }
+    #email{
+        margin-bottom: 10px;
+        margin-left: 8px;
+    }
+    #boton{
+        display: flex;
+        margin-left: 130px;
+        margin-top: 40px;
+    }
+    .username{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 15px;
+    }
+    #ingresa {
+        justify-content: center;
+        align-items: center;
+        font-family: 'Ysabeau', sans-serif;
+        
+    
+    }
+    header{
+        display: flex;
+        align-items: center;
+    }
+    main{
+        justify-content: center;
+    }
+}
+
+/*FOOTER*/
 #footer {
     display: flex;
     justify-content: space-evenly;
@@ -313,6 +375,8 @@ background-image: url(../img/fondoLogin.jpg);
 #footerDos {
     margin-left: 200px;
 }
+
+/*LORE*/
 
 #historia{
     margin-top: 50px;
@@ -342,51 +406,4 @@ background-image: url(../img/fondoLogin.jpg);
 
 .pruebaTitulo{
     margin-right: 70px;
-}
-
-@media screen and (max-width:500px) {
-    #fondoLogin {
-        background-image: url(../img/fondoLogin.jpg);
-        background-position-x: center;
-        background-repeat: no-repeat;
-    }
-    .bloqueLogin {
-        background: rgba(223, 186, 186, 0.1);
-        backdrop-filter: blur(5px);
-        display: flex;
-        margin: 20px;
-        margin-top: 50px;
-        margin-left: 28px;
-        border: 1px solid white;
-        border-radius: 15px;
-        border-style: solid;
-        width: 320px;           /* Ancho de 150 píxeles */
-        height: 550px;          /* Alto de 150 píxeles */
-        border: 5px solid rgba(255, 255, 255, 0.2); /* Borde color negro y de 1 píxel de grosor */
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    #password{
-        margin-bottom: 160px;
-        margin-left: 10px;
-    }
-    #email{
-        margin-bottom: 10px;
-        margin-left: 8px;
-    }
-    #boton{
-        display: flex;
-        margin-left: 130px;
-        margin-top: 40px;
-    }
-    .username{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin-left: 15px;
-    }
-    #ingresa {
-        margin-left: 110px;
-        font-family: 'Ysabeau', sans-serif;
-        margin-top: 50px;
-    
-    }
 }
