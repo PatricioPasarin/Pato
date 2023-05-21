@@ -303,9 +303,9 @@ background-image: url(../img/fondoLogin.jpg);
 #ingresa {
     margin-left: 110px;
     font-family: 'Ysabeau', sans-serif;
-    color: aqua;
 
 }
+
 
 /*LOGIN RESPONSIVE*/
 
@@ -335,10 +335,13 @@ background-image: url(../img/fondoLogin.jpg);
         justify-content: space-around;
     }
     #password{
+        float: inline-start;
         margin-bottom: 160px;
         margin-left: 10px;
+    
     }
     #email{
+        float:inline-start;
         margin-bottom: 10px;
         margin-left: 8px;
     }
