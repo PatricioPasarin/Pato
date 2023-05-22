@@ -23,6 +23,9 @@ background-color: #626554;
     font-family: 'Ysabeau', sans-serif;
     
 }
+.LinkPersonajes:hover{
+    color: #93a059;
+}
 .merch{
     text-decoration: none;
     text-decoration: none;
@@ -32,6 +35,9 @@ background-color: #626554;
     margin-right: 20px;
     display: flex;
     justify-content:left;
+}
+.merch:hover{
+    color: #93a059;
 }
 .tituloInicio{
     font-size: 25px;
@@ -109,6 +115,24 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: aliceblue;
     border-radius: 20px;
     margin-left: 3px;
+    transition: 0.3s ease;
+}
+.jugarAhora:hover{
+    border-radius: 5px;
+    border-color: antiquewhite;
+    transition: 0.3s ease;
+}
+.jugarAhoraI:hover{
+    border-radius: 5px;
+    border-color: white(156, 101, 56);
+    transition: 0.3s ease;
+}
+.jugarAhoraII:hover{
+    border-radius: 5px;
+    border-color: antiquewhite;
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
 }
 
 .jugarAhoraI{
@@ -197,6 +221,9 @@ margin: 20px;
     justify-content: center;
     text-decoration: none;
 }
+.SerieHBO:hover{
+    color: #93a059;
+}
 .boton {
     border: 3px solid #626554;
     height: 20px;
@@ -209,12 +236,14 @@ margin: 20px;
     font-family: 'Ysabeau', sans-serif;
     border-radius: 20px;
     margin-left: 3px;
+    display: flex;
+    align-items: center;
     
 }
 
 .boton:hover{
     border: 3px solid #93a059;
-    height: 25px;
+    height: 20px;
     width: 60PX;
     padding: 17px;
     background-color: #93a059; 
@@ -222,8 +251,9 @@ margin: 20px;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Ysabeau', sans-serif;
-    border-radius: 50px;
+    border-radius: 20px;
     margin-left: 3px;
+
     
 
 }
@@ -479,6 +509,9 @@ background-image: url(../img/fondoLogin.jpg);
     margin-right: 20px;
     display: flex;
     justify-content:left;
+}
+.lore:hover{
+    color: #93a059;
 }
 
 .pruebaTitulo{
