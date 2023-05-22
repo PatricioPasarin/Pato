@@ -81,8 +81,64 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
+.logoTlou{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.jaGral{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.textDecoration{
+    text-decoration: none;
 
+}
+.jugarAhora{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: black; 
+    color:black; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Ysabeau', sans-serif;
+    color: aliceblue;
+    border-radius: 20px;
+    margin-left: 3px;
+}
 
+.jugarAhoraI{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 10px;
+    background-color: black; 
+    color:black; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Ysabeau', sans-serif;
+    color: aliceblue;
+    border-radius: 20px;
+    margin-left: 3px;
+}
+.jugarAhoraII{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: rgb(255, 255, 255); 
+    color:black; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Ysabeau', sans-serif;
+    color: black;
+    border-radius: 20px;
+    margin-left: 3px;
+}
 
 
 .Joel {
@@ -143,10 +199,25 @@ margin: 20px;
 }
 .boton {
     border: 3px solid #626554;
+    height: 20px;
+    width: 60px;
+    padding: 17px;
+    background-color: #626554; 
+    color:black; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Ysabeau', sans-serif;
+    border-radius: 20px;
+    margin-left: 3px;
+    
+}
+
+.boton:hover{
+    border: 3px solid #93a059;
     height: 25px;
     width: 60PX;
     padding: 17px;
-    background-color: #626554; 
+    background-color: #93a059; 
     color:black; 
     text-decoration: none;
     text-transform: uppercase;
@@ -154,9 +225,11 @@ margin: 20px;
     border-radius: 50px;
     margin-left: 3px;
     
+
 }
 .botonIn{
     margin-right: 20px;
+    
 }
 .imagenArticle{
     display: flex;
