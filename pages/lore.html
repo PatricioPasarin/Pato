@@ -9,28 +9,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="fondo">
-    <header class="contenedor-flexbox">
-        <div>
-            <a href="../index.html" class="merch"> <ol class="inicio">INICIO</ol></a>
+    <nav class="navbar navbar-expand-lg bg-body-black">
+        <div class="container-fluid">
+          <h1 class="navbar-text mayus">
+            THE LAST OF US
+          </h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="blanco">
+              <li class="nav-item" id="blanco">
+                <a class="nav-link active" id="blanco" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item" id="blanco">
+                <a class="nav-link" id="blanco" href="./pages/Personajes.html">PERSONAJES</a>
+              </li>
+              <li class="nav-item" id="blanco">
+                <a class="nav-link" id="blanco" href="./pages/SerieHBO.html">SERIE HBO</a>
+              </li>
+              <li class="nav-item" id="blanco">
+                <a class="nav-link active" id="blanco" aria-current="page" href="https://gear.playstation.com/Browse/TLOU" target="_blank">TIENDA</a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-propio" role="button" data-bs-toggle="button">JUGAR AHORA</a>
+          </div>
         </div>
-        <div>
-            <a href="https://gear.playstation.com/Browse/TLOU" target="_blank" class="merch"> <ol class="merch">TIENDA</ol> </a>
-        </div>
-        <div class="LinkPersonajes merch">
-            <a href="../pages/Personajes.html" class="LinkPersonajes merch"><ol class="LinkPersonajes">PERSONAJES</ol></a>
-        </div>
-        <div>
-            <a href="../pages/SerieHBO.html" class="LinkPersonajes merch"><ol class="LinkPersonajes">TV SHOW</ol></a>
-        </div>
-        <div class="titulo">
-            <h1>THE LAST OF US</h1>
-        </div>
-        <a href="../pages/Login.html" class="boton"> <ol class="botonIn">INICIAR SESION</ol></a>
-        <a href="https://store.sony.com.ar/last-of-us-remastered/p" target="_blank" class="boton"> <ol class="botonIn">JUGAR AHORA</ol></a>
-    </header>
+      </nav>
     <main>
         <h2 id="tituloHistoria">Historia del videojuego</h2>
         <div id="historia">
@@ -48,4 +58,6 @@
         <img src="../img/logo-Sony.png" alt="sonyLogo" width="100" height="50">
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </html>
