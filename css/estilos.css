@@ -88,7 +88,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .logoTlou{
-    margin-top: 40px;
+    margin-top: 110px;
     display: flex;
     justify-content: center;
 }
@@ -294,6 +294,7 @@ margin: 20px;
 .tituloEllie{
     display: flex;
     justify-content: center;margin: 20px;
+    margin-top: 100px;
 }
 .edades{
     margin-left: 20px;
@@ -337,7 +338,7 @@ margin: 20px;
 }
 /*****************************************SERIEHBO******************************/
 .tituloDos{
-    margin-top: 25px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     font-size: 22px;
@@ -386,12 +387,12 @@ background-image: url(../img/fondoLogin.jpg);
     display: flex;
     margin-top: 150px;
     margin-left: 540px;
-    border: 1px solid white;
-    border-radius: 15px;
+    border: 2px solid white;
+    border-radius: 1px;
     border-style: solid;
     width: 320px;           /* Ancho de 150 píxeles */
     height: 350px;          /* Alto de 150 píxeles */
-    border: 5px solid rgba(255, 255, 255, 0.2); /* Borde color negro y de 1 píxel de grosor */
+    border: 3px solid rgba(255, 255, 255, 0.2); /* Borde color negro y de 1 píxel de grosor */
     flex-direction: column;
     justify-content: space-around;
 }
@@ -413,8 +414,9 @@ background-image: url(../img/fondoLogin.jpg);
     margin-left: 15px;
 }
 #ingresa {
-    margin-left: 110px;
+    margin-left: 35%;
     font-family: 'Ysabeau', sans-serif;
+    color: white;
 
 }
 
@@ -438,7 +440,7 @@ background-image: url(../img/fondoLogin.jpg);
         margin-top: 50px;
         margin-left: 28px;
         border: 1px solid white;
-        border-radius: 15px;
+        border-radius: 1px;
         border-style: solid;
         width: 100%;           /* Ancho de 150 píxeles */
         height: 88vh;          /* Alto de 150 píxeles */
@@ -620,4 +622,25 @@ background-image: url(../img/fondoLogin.jpg);
 .col{
     text-decoration: none;
     color: white;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.btn-primary{
+    background-color: rgb(8, 177, 199);
+    border-color: rgb(8, 177, 199) ;
+}
+.form-control{
+    width: 80%;
+    margin-left: 9%;
+}
+.emailAddress{
+    margin-left: 20px;
+
+}
+.password{
+    margin-left: 20px;
 }
