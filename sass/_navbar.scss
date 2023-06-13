@@ -1,0 +1,8 @@
+@import 'variablesColor';
+.btn-propio{
+    background-color: $color-fondo;
+    &:hover{
+        background-color: $color-hover;
+        border-color: $color-hover;
+    }
+}

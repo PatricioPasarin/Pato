@@ -1,0 +1,26 @@
+@use 'navbar';
+@use 'main';
+@use 'inicioPersonajes';
+@use 'inicioSerie';
+@use 'tienda';
+@use 'personajes';
+@use 'serieHBO';
+@use 'lore';
+@use 'login';
+@use 'bootstrap';
+@use 'footer';
+
+$color-fondo:#626554;
+$color-hover:#93a059;
+*{
+    margin: 0;
+    padding: 0;
+}
+.fondo{
+    background-color: $color-fondo;
+}
+.fuente {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+    

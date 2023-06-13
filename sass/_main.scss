@@ -1,0 +1,123 @@
+@import 'variablesColor';
+.logoTlou{
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+.jaGral{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.textDecoration{
+    text-decoration: none;
+
+}
+.jugarAhora{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: black; 
+    color:black; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Ysabeau', sans-serif;
+    color: aliceblue;
+    border-radius: 20px;
+    margin-left: 3px;
+    transition: 0.3s ease;
+    &:hover{
+        border-radius: 5px;
+    border-color: antiquewhite;
+    transition: 0.3s ease;
+    }
+}
+.jugarAhoraI{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 10px;
+    background-color: black; 
+    color:black; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Ysabeau', sans-serif;
+    color: aliceblue;
+    border-radius: 20px;
+    margin-left: 3px;
+    &:hover{
+        border-radius: 5px;
+    border-color: white(156, 101, 56);
+    transition: 0.3s ease;
+    }
+}
+.jugarAhoraII{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: rgb(255, 255, 255); 
+    color:black; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Ysabeau', sans-serif;
+    color: black;
+    border-radius: 20px;
+    margin-left: 3px;
+    &:hover{
+        border-radius: 5px;
+    border-color: antiquewhite;
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
+    }
+}
+/********MOBILE INICIO*******/
+@media screen and (max-width:480px){
+    .jaGral{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoTlou{
+        width:100%;
+        height: 100%;
+        
+    }
+    .imgSerie{
+        width: 100%;
+        height: 200px;
+    }
+    .imgTienda{
+        width:min-content;
+        height: min-content;
+    }
+    .w-101{
+        width: 100%;
+        height: 200px;
+    }
+    .carousel-item img {
+        width: 100%; /* Establece el tamaño deseado para el modo de escritorio */
+        height: 200px; /* Ajusta la altura automáticamente para mantener la proporción */
+    }
+    iframe {
+        margin-top: 30px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        margin-left: 0;
+    }
+    .fotoEllie{
+        width: 300px;
+    }
+    .Joelfoto{
+        width: 300px;
+    }
+    .tituloTres{
+        font-size: 24px;
+        margin: 0;
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,38 @@
+@import 'variablesColor';
+.Joel {
+    border: solid;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 10%;
+    margin: 20px;
+}
+.Ellie {
+    text-decoration: none;
+    ;
+    font-size: 20px;
+    color: black;
+}
+
+.fotoJoel{
+    align-items: center;
+}
+.imagenes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ConocePersonajes {
+    display: flex;
+    justify-content: center;
+    
+}
+.Personajes {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin: 20px;
+}
