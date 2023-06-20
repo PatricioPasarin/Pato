@@ -49,7 +49,9 @@
     margin-left: 3px;
     &:hover{
         border-radius: 5px;
-    border-color: white(156, 101, 56);
+        background-color: white;
+        border-color: black;
+        color: black;
     transition: 0.3s ease;
     }
 }
@@ -73,6 +75,11 @@
     background-color: black;
     transition: 0.5s ease;
     }
+}
+.carousel-item img {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
 }
 /********MOBILE INICIO*******/
 @media screen and (max-width:480px){
@@ -99,8 +106,9 @@
         height: 200px;
     }
     .carousel-item img {
-        width: 100%; /* Establece el tamaño deseado para el modo de escritorio */
-        height: 200px; /* Ajusta la altura automáticamente para mantener la proporción */
+        margin: 0 auto;
+        width: 70%; /* Establece el tamaño deseado para el modo de escritorio */
+        height: 30%; /* Ajusta la altura automáticamente para mantener la proporción */
     }
     iframe {
         margin-top: 30px;
@@ -119,5 +127,9 @@
         font-size: 24px;
         margin: 0;
         margin-top: 40px;
+    }
+    .videoIframe{
+        margin-top: 30px;
+        margin-left: 0%;
     }
 }

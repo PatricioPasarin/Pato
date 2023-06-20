@@ -61,7 +61,9 @@
 }
 .jugarAhoraI:hover {
   border-radius: 5px;
-  border-color: white(156, 101, 56);
+  background-color: white;
+  border-color: black;
+  color: black;
   transition: 0.3s ease;
 }
 
@@ -85,6 +87,12 @@
   color: white;
   background-color: black;
   transition: 0.5s ease;
+}
+
+.carousel-item img {
+  margin: 0 auto;
+  width: 30%;
+  height: 30%;
 }
 
 /********MOBILE INICIO*******/
@@ -111,8 +119,9 @@
     height: 200px;
   }
   .carousel-item img {
-    width: 100%; /* Establece el tamaño deseado para el modo de escritorio */
-    height: 200px; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin: 0 auto;
+    width: 70%; /* Establece el tamaño deseado para el modo de escritorio */
+    height: 30%; /* Ajusta la altura automáticamente para mantener la proporción */
   }
   iframe {
     margin-top: 30px;
@@ -131,6 +140,10 @@
     font-size: 24px;
     margin: 0;
     margin-top: 40px;
+  }
+  .videoIframe {
+    margin-top: 30px;
+    margin-left: 0%;
   }
 }
 .Joel {
@@ -282,9 +295,10 @@
   font-size: 20px;
 }
 
-iframe {
-  margin-top: 30px;
-  margin-left: 30%;
+.videoIframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tituloTres {
@@ -464,12 +478,6 @@ iframe {
 .w-101 {
   display: flex;
   justify-content: center !important;
-}
-
-.carousel-item img {
-  margin: 0 auto;
-  width: 50%;
-  height: 400px;
 }
 
 .btn-propio {
