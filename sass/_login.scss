@@ -13,7 +13,7 @@
         border-style: solid;
         width: 320px;           /* Ancho de 150 píxeles */
         height: 350px;          /* Alto de 150 píxeles */
-        border: 3px solid rgba(255, 255, 255, 0.2); /* Borde color negro y de 1 píxel de grosor */
+        border: 2px solid rgba(255, 255, 255, 0.2); /* Borde color negro y de 1 píxel de grosor */
         flex-direction: column;
         justify-content: space-around;
     }
@@ -35,9 +35,10 @@
         margin-left: 15px;
     }
     #ingresa {
-        margin-left: 35%;
-        font-family: 'Ysabeau', sans-serif;
-        color: white;
+        margin-left: 26%;
+        margin-top: 3%;
+        font-family: monospace;
+        color: black;
     
     }
     
@@ -62,7 +63,7 @@
             border-style: solid;
             width: 100%;           /* Ancho de 150 píxeles */
             height: 88vh;          /* Alto de 150 píxeles */
-            border: 5px solid rgba(255, 255, 255, 0.2); /* Borde color negro y de 1 píxel de grosor */
+            border: 2px solid rgba(255, 255, 255, 0.2); /* Borde color negro y de 1 píxel de grosor */
             flex-direction: column;
             justify-content: space-around;
         }
@@ -89,7 +90,8 @@
         #ingresa {
             justify-content: center;
             align-items: center;
-            font-family: 'Ysabeau', sans-serif;
+            font-family: monospace;
+            margin-left: 29%;
             
         
         }
@@ -100,4 +102,14 @@
         main{
             justify-content: center;
         }
+    }
+    .password{margin-left: 20px;
+        font-size: 87%;
+        font-family: monospace;
+    }
+    .emailAddress {
+        margin-left: 20px;
+        margin-left: 20px;
+        font-size: 87%;
+        font-family: monospace;
     }

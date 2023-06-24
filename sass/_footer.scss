@@ -1,9 +1,62 @@
 @import 'variablesColor';
-#footer {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 140px;
+.footer{
+    background-color: black;
+    margin-top: 5%;
 }
-#footerDos {
-    margin-left: 200px;
+.footerTitulo{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    
+}
+.descubrir{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 17px;
+    margin: 25px;
+}
+.descubrirLinks{
+    display: flex;
+    justify-content:space-around;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    &:hover{
+        color:$color-hover;
+        text-decoration: underline;
+    }
+    
+}
+.redes{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    &:hover{
+        color:$color-hover;
+    }
+}
+.footerFinal{
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+}
+.footerContenido{
+    color: white;
+    font-size: 30px;
+}
+.footerDerechos{
+    color: white;
+    font-size: 12px;
+}
+@media screen and (max-width:480px){
+.descubrirLinks{
+    display: inline;
+    text-align: center;
+}
+    
 }
