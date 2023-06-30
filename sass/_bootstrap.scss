@@ -9,10 +9,23 @@
     color: white;
     font-size: 20px;
     padding: 5px;
+    
     &:hover{
         color: $color-hover;
     }
     }
+    .nav-link {
+        color: white;
+    font-size: 20px;
+    padding: 5px;
+    &:hover{
+        color: $color-hover;
+    }
+    }
+    .navbar-nav , .nav-link.active , .navbar-nav , .nav-link .show{
+        color: white;
+    }
+
 
 .mayus{
     font-size: 30px;
