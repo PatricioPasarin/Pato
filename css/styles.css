@@ -643,5 +643,12 @@
 .fuente {
   font-family: Arial, Helvetica, sans-serif;
 }
+.msjLogeo {
+  margin-left: 26%;
+  margin-bottom: 15%;
+  font-family: monospace;
+  color: black;
+}
+
 
 /*# sourceMappingURL=styles.css.map */
