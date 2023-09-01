@@ -52,7 +52,7 @@ botonEnviar.addEventListener("click", async () => {
                 position: 'top-end',
                 icon: 'success',
                 title: 'Successful login',
-                footer: '<a href="/index.html">Start</a>',
+                footer: '<a href="../index.html">Start</a>',
                 showConfirmButton: false,
                 timer: 2500
             })
