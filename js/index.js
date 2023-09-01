@@ -12,7 +12,6 @@ const base_de_datos = [
         password: "1234"
     }
 ];
-
 const existeUser = JSON.parse(localStorage.getItem("user"))
 const user = document.querySelector("#floatingInput");
 const password = document.querySelector("#floatingPassword");
@@ -49,7 +48,7 @@ botonEnviar.addEventListener("click", async () => {
             const logeo = document.querySelector("#logeo");
             logeo.innerHTML= '<h2 id="ingresa"> Welcome </h2> <a href="/index.html" class="btn btn-primary">Start</a>';
             Swal.fire({
-                position: 'top-end',
+                position: 'center',
                 icon: 'success',
                 title: 'Successful login',
                 footer: '<a href="../index.html">Start</a>',
@@ -80,5 +79,21 @@ botonEnviar.addEventListener("click", async () => {
         console.error("An error occurred:", error);
     }
 });
+
+setTimeout(() => {
+    Swal.fire({
+        title: 'Login time expired',
+        showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '../index.html';
+        }
+    });
+}, 30000);
 
 localStorage.removeItem("base de datos");
