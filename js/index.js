@@ -95,5 +95,16 @@ setTimeout(() => {
         }
     });
 }, 30000);
+window.addEventListener("load", () => {
+    if (existeUser) {
+        // Muestra un mensaje de bienvenida
+        logeo.innerHTML = '<h2 id="ingresa">Welcome</h2> <a href="/index.html" class="btn btn-primary">Start</a>';
+        
+        // Oculta el formulario de inicio de sesión
+        document.querySelector("#formulario-login").style.display = "none";
+    }
+});
 
 localStorage.removeItem("base de datos");
+
+localStorage.removeItem(base_de_datos)
