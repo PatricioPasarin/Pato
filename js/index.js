@@ -1,33 +1,29 @@
-let registro_user = document.querySelector("#floatingInput");
-registro_user.addEventListener("input", (event) => {
-    const nuevoUsuario = event.target.value;
-    localStorage.setItem("miUser", nuevoUsuario);
+let registro_user = document.querySelector(".input_user");
+let registro_contra = document.querySelector(".input_password");
+const existeUser = JSON.parse(localStorage.getItem("user"))
+const user = document.querySelector("#floatingInput");
+const password = document.querySelector("#floatingPassword");
+const botonEnviar = document.querySelector("#enviar");
+const botonRegistrarse = document.querySelector(".registrarse");
+const irRegistro = document.querySelector("#register");
+const input_register = document.querySelector(".input_register");
+const input_botton = document.getElementById("buttonInput")
+
+registro_user.value = localStorage.getItem('nuser') || ''
+registro_contra.value = localStorage.getItem('npassword') || ''
+
+const input_button = document.getElementById("buttonInput");
+
+input_button.addEventListener('click', function(event) {
+    event.preventDefault();
+    let email = registro_user.value;
+    console.log("hola", email);
+    localStorage.setItem('email', email);
+    let passwordValue = registro_contra.value;
+    console.log("tu contraseña es", passwordValue, "no se la digas a nadie");
+    localStorage.setItem('password', passwordValue);
 });
 
-let registro_contra = document.querySelector("#floatingPassword");
-registro_contra.addEventListener("input", (event) => {
-    const nuevaClave = event.target.value;
-    localStorage.setItem("miClave", nuevaClave);
-});
-
-const botonRegister = document.querySelector("#enviar");
-botonRegister.addEventListener("click", (event) => {
-    
-    const new_user = registro_user.value;
-    const new_password = registro_contra.value;
-    
-    
-    const nuevoUsuario = {
-        user: new_user,
-        password: new_password
-    };
-
-    
-    base_de_datos.push(nuevoUsuario);
-
-    
-    localStorage.setItem("base_de_datos", JSON.stringify(base_de_datos));
-});
 
 const base_de_datos = [
     {
@@ -43,12 +39,7 @@ const base_de_datos = [
         password: registro_contra
     }
 ];
-const existeUser = JSON.parse(localStorage.getItem("user"))
-const user = document.querySelector("#floatingInput");
-const password = document.querySelector("#floatingPassword");
-const botonEnviar = document.querySelector("#enviar");
-const botonRegistrarse = document.querySelector(".registrarse");
-const irRegistro = document.querySelector("#register");
+
 
 
 
@@ -65,10 +56,10 @@ password.addEventListener("input",(event)=>{
     validacion.password = event.target.value;
 })
 
-botonEnviar.addEventListener("click", async () => {
+botonEnviar.addEventListener("click", async (event) => {
     try {
         const validacionExitosa = base_de_datos.find(user => user.user == validacion.user && user.password == validacion.password);
-
+        event.preventDefault();
         if (validacionExitosa === undefined){
             const logeo = document.querySelector("#logeo");
             logeo.innerHTML= '<h2 class="msjLogeo"> user not found </h2> <a href="/pages/Login.html" class="btn btn-primary">retry</a>';
@@ -80,8 +71,6 @@ botonEnviar.addEventListener("click", async () => {
             })
         } else {
             const logeo = document.querySelector("#logeo");
-            logeo.innerHTML= '<h2 id="ingresa"> Welcome </h2> <a href="/index.html" class="btn btn-primary">Start</a>';
-            botonInicio.innerHTML= '<a href="./pages/Login.html" class="btn btn-propio">Bienvenido</a>'
             Swal.fire({
                 position: 'center',
                 icon: 'success',
@@ -154,7 +143,7 @@ window.addEventListener("load", () => {
     irRegistro.addEventListener("click", () => {
     
 
-        logeo.innerHTML = '<div  id="logeo"> <h1 id="ingresa">Sign Up</h1> <form> <div class="form-floating mb-3"> <input type="email" class="form-control" id="floatingInput" placeholder="Usuario"> <label for="floatingInput" class="emailAddress">Username</label> </div> <div class="form-floating"> <input type="password" class="form-control" id="floatingPassword" placeholder="Password"> <label for="floatingPassword" class="password">Password</label> </div> <button class="btn btn-primary" id="enviar" type="submit">Sign Up</button>'
+        logeo.innerHTML = '<div  id="logeo"> <h1 id="ingresa">Sign Up</h1> <form> <div class="form-floating mb-3"> <input type="email" class="form-control , input_user" id="floatingInput" placeholder="Usuario"> <label for="floatingInput" class="emailAddress">Username</label> </div> <div class="form-floating"> <input type="password" class="form-control , input_password" id="floatingPassword" placeholder="Password"> <label for="floatingPassword" class="password">Password</label> </div> <button class="btn btn-primary input_register" type="button">Sign Up</button> <div> <button id="buttonInput" type="button"> Register </button> </div>'
         console.log("Botón Register clickeado");
 
     })
