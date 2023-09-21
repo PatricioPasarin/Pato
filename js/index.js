@@ -7,22 +7,12 @@ const botonEnviar = document.querySelector("#enviar");
 const botonRegistrarse = document.querySelector(".registrarse");
 const irRegistro = document.querySelector("#register");
 const input_register = document.querySelector(".input_register");
-const input_botton = document.getElementById("buttonInput")
+const input_button = document.getElementById("buttonInput")
 
 registro_user.value = localStorage.getItem('nuser') || ''
 registro_contra.value = localStorage.getItem('npassword') || ''
 
-const input_button = document.getElementById("buttonInput");
 
-input_button.addEventListener('click', function(event) {
-    event.preventDefault();
-    let email = registro_user.value;
-    console.log("hola", email);
-    localStorage.setItem('email', email);
-    let passwordValue = registro_contra.value;
-    console.log("tu contraseña es", passwordValue, "no se la digas a nadie");
-    localStorage.setItem('password', passwordValue);
-});
 
 
 const base_de_datos = [
@@ -33,13 +23,26 @@ const base_de_datos = [
     {
         user: "ana",
         password: "1234"
-    },
-    {
-        user: registro_user,
-        password: registro_contra
     }
 ];
 
+input_button.addEventListener('click', (event) => {
+    event.preventDefault();
+    let email = registro_user.value;
+    console.log("hola", email);
+    localStorage.setItem('email', email);
+    let password = registro_contra.value;
+    console.log("tu contraseña es", email, "no se la digas a nadie");
+    localStorage.setItem('password', password);
+    let new_user = email;
+    let new_password = password;
+    const nuevoRegistro = {
+        user: new_user,
+        password: new_password
+    }
+    base_de_datos.push(nuevoRegistro);
+    console.log (base_de_datos)
+})
 
 
 
@@ -143,7 +146,7 @@ window.addEventListener("load", () => {
     irRegistro.addEventListener("click", () => {
     
 
-        logeo.innerHTML = '<div  id="logeo"> <h1 id="ingresa">Sign Up</h1> <form> <div class="form-floating mb-3"> <input type="email" class="form-control , input_user" id="floatingInput" placeholder="Usuario"> <label for="floatingInput" class="emailAddress">Username</label> </div> <div class="form-floating"> <input type="password" class="form-control , input_password" id="floatingPassword" placeholder="Password"> <label for="floatingPassword" class="password">Password</label> </div> <button class="btn btn-primary input_register" type="button">Sign Up</button> <div> <button id="buttonInput" type="button"> Register </button> </div>'
+        logeo.innerHTML = '<div  id="logeo"> <h1 id="ingresa">Sign Up</h1> <form> <div class="form-floating mb-3"> <input type="email" class="form-control input_user" id="floatingInput" placeholder="Usuario"> <label for="floatingInput" class="emailAddress">Username</label> </div> <div class="form-floating"> <input type="password" class="form-control input_password" id="floatingPassword" placeholder="Password"> <label for="floatingPassword" class="password">Password</label> </div> <button class="btn btn-primary input_register" type="button">Sign Up</button> <div> <button id="buttonInput" type="button"> Register </button> </div>'
         console.log("Botón Register clickeado");
 
     })
